@@ -21,10 +21,6 @@ ul {
   flex: 1 1 auto;
 }
 
-article, aside {
-  border: 2px solid red;
-}
-
 header {
   display: flex;
   flex-direction: row;
