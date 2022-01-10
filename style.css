@@ -1,0 +1,364 @@
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a {
+  color:rgb(72, 185, 230);
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding-inline-start: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.container > * {
+  flex: 1 1 auto;
+}
+
+article, aside {
+  border: 2px solid red;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 10px;
+  align-items: center;
+}
+
+header > * {
+  flex: 1 1 0px;
+}
+
+header a.main-title {
+  flex: 2 1 0px;
+  text-align: center;
+  font-size: 50px;
+  color: black;
+  margin: -50px 0;
+}
+
+a.newsletter-signup {
+  color: rgb(175, 175, 175);
+}
+
+a.newsletter-signup:hover {
+  color: rgb(175, 175, 175);
+  text-decoration: underline;
+}
+
+a.newsletter-link:hover {
+  color: rgb(59, 154, 191);
+}
+
+.subscribe {
+  background-color: rgb(72, 185, 230);
+  border-radius: 5px;
+  color: white;
+  font-size: 1em;
+  border: 0;
+  height: 2em;
+}
+
+.subscribe:hover {
+  background-color: rgb(59, 154, 191);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid rgb(175, 175, 175);
+}
+
+.magazine-section-links a {
+  color: black;
+  font-weight: bold;
+}
+
+.magazine-section-links a:hover {
+  color: rgb(72, 185, 230);
+  font-weight: bold;
+  border-bottom: 4px solid black;
+}
+
+.website-section-links a {
+  font-weight: bold;
+}
+
+.website-section-links a:hover {
+  font-weight: bold;
+  border-bottom: 4px solid black;
+}
+
+.signin-search a {
+  color: black;
+  font-weight: bold;
+  margin: 0 3px;
+}
+
+.signin-search a:hover {
+  color: rgb(175, 175, 175);
+  text-decoration: underline;
+}
+
+.middle {
+  display: flex;
+  padding: 10px;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
+article {
+  flex: 5 1 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+article h1 {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: xx-large;
+  margin-bottom: 10px;
+}
+
+.middle article > * {
+  margin-top: 5px;
+}
+
+article p {
+  color: rgb(131, 131, 131);
+}
+
+.social-media-icons > * {
+  margin: 0 5px;
+}
+
+figcaption {
+  font-size: x-small;
+}
+
+.insert {
+  display: flex;
+  padding: 10px;
+  font-size: smaller;
+  margin-bottom: 10px;
+  background-color: rgb(237, 237, 237);
+}
+
+.info p {
+  font-size: smaller;
+  color: rgb(96, 95, 95);
+}
+
+.more-topics {
+  display: flex;
+  align-content: center;
+}
+
+.more-topics > * {
+  margin-right: 10px;
+  height: 3em;
+}
+
+.more-topics button {
+  background-color: rgb(0, 67, 118);
+  border-radius: 5px;
+  border: 0;
+  color: white;
+}
+
+.middle aside {
+  flex: 2 1 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+ul.recommended-sections {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 5px 0 -5px 0;
+}
+
+.recommend-link  {
+  background-color: rgb(237, 237, 237);
+  color: black;
+  padding: 5px;
+}
+
+.recommend-link:hover {
+  background-color: rgb(196, 196, 196);
+}
+
+ul.recommended-articles {
+  display: flex;
+  flex-direction: column;
+}
+
+ul.article-ranking  {
+  display: flex;
+  align-items: center;
+  background-color: rgb(237, 237, 237);
+  padding: 5px;
+  margin-bottom: 5px;
+  text-align: left;
+  font-weight: bold;
+}
+
+ul.article-ranking li {
+  color: rgb(72, 185, 230);
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+ul.article-ranking li a {
+  color: rgb(96, 95, 95);
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+.recommend-article:hover {
+  color: rgb(72, 185, 230);
+}
+
+.media {
+  display: flex;
+  padding: 10px;
+}
+
+a.magazine-cover {
+  margin-left: 20px;
+  margin-right: 10px;
+}
+
+.app {
+  background-color: rgb(59, 193, 193);
+  border-radius: 5px;
+  color: white;
+  font-size: 1em;
+  border: 0;
+  height: 2em;
+}
+
+.print {
+  background-color: red;
+  border-radius: 5px;
+  color: white;
+  font-size: 1em;
+  border: 0;
+  height: 2em;
+}
+
+.subscription-buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+.subscription-buttons button {
+  margin-bottom: 10px;
+}
+
+.more-articles {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.more-articles .articles {
+  display: flex;
+}
+
+.articles a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 10px;
+  justify-content: stretch;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  align-items: stretch;
+  background-color: rgb(237, 237, 237);
+}
+
+footer > * {
+  text-align: center;
+  margin: 10px 0;
+}
+
+footer p {
+  color: rgb(96, 95, 95);
+}
+
+footer input[type="email"] {
+  border-width: 0 0 2px;
+  width: 300px;
+}
+
+footer a, .articles a {
+  color:black;
+  text-decoration: none;
+}
+
+footer a:hover, .articles a:hover {
+  color:rgb(72, 185, 230);
+  text-decoration: none;
+}
+
+footer h3, footer p {
+  text-align: left;
+}
+
+button[type="submit"] {
+  background-color: rgb(0, 67, 118);
+  border-radius: 5px;
+  color: white;
+  font-size: 1em;
+  border: 0;
+  height: 2em;
+  width: 15em;
+  margin: 0 0 10px 10px;
+}
+
+.get-the-app {
+  display: flex;
+  flex-direction: column;
+  margin-top: -5px;
+}
+
+.get-the-app p {
+  text-align: left;
+}
+
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  align-content: stretch;
+  align-items: baseline;
+  color: black
+}
+
+.copyright a:hover {
+  color: rgb(96, 95, 95);
+}
+
+.back-to-top {
+  margin-left: 0 auto;
+}
+
+@media all and (min-width:1200px) {
+  .container {
+    margin: 10px 150px;
+  }
+}
